@@ -1,0 +1,17 @@
+<template name="tutorials">
+<div class="container" id = "tutorials">
+
+	
+	<div class="row">
+	{{#each tutorials}}
+			<div class="col-md-3" id={{_id}}>
+			<div class="thumbnail {{add_shadow}}">
+			<img src="{{tutorial_img}}" />
+				<h3> {{tutorial_name}} </h3>
+				{{tutorial_description}}
+			</div> 	<!--End of Thumbnail -->
+			</div> <!--End of Column -->
+	{{/each}}
+	</div> <!--End of Row -->
+</div>
+</template>

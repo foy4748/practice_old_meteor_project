@@ -1,0 +1,53 @@
+<template name = "profile">
+	<div class="container" id = "profile">
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" id="js_add_tutorial_button" data-toggle="modal" data-target="#js_add_tutorial_modal">
+		  Add Tutorial
+		</button>
+		<!-- //Button trigger modal -->
+	</div> <!-- End of Container -->
+</template> 
+<!-- End of Profile template -->
+
+
+<!-- Modal template -->
+<template name="add_tutorial_modal">
+<!-- Modal -->
+<div class="modal fade" id="js_add_tutorial_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      	<span aria-hidden="true">&times;</span>
+       	</button>
+        <h2 class="modal-title" id="exampleModalLabel">Add Tutorial</h2>
+      </div>
+      <div class="modal-body">
+        <!-- Form Started -->
+		<form class="js_add_tutorial">
+			<input type="text" name="tutorial_name" placeholder="Tutorial Name"/>
+			<br/>
+			<input type="text" name="tutorial_description" placeholder="Tutorial Short Description"/>
+			<br/>
+			<input type="text" name="tutorial_cover" placeholder="Tutorial Cover url"/>
+			<br/>
+			<button class="btn btn-success js_add_tutorial"> Submit </button>
+		</form>
+		<!-- Form Ended -->
+      </div>
+      <div class="modal-footer">
+      		
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Modal -->
+</template>
+<!-- End of Modal Template -->
+
+	
+
+
+
+
+
